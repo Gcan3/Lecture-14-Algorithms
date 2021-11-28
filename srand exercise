@@ -10,11 +10,13 @@ int main()
 	cout << "This is randomizer bot and I will randomize numbers up to 1000 times and count how many 6's there are" << endl;
 	int randomArray[1000];
 	int x = 0;
+	srand(3);
 	for (int i = 0; i < 1000; i++) {
 		randomArray[i] = rand() % 50;
 		if (randomArray[i] == 6) {
 			x++;
 		}
+		cout << randomArray[i] << endl;
 	}
 	cout << "There are about " << x << " 6's that appeared in this randomizer" << endl;
 	return 0;
