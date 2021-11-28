@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+#include <array>
+
+using namespace std;
+int main()
+{
+    array<string, 4> arr = {"Mars Bar", "Snickers", "Bounty", "Wispa"};
+    cout << arr.at(1) << endl; //returns to to index 1. eg. Snickers will display
+    cout << arr[1] << endl;//same as above
+
+    cout << arr.front() << endl; //returns to the beginning of the array. eg. Mars Bar
+    cout << arr.back() << endl; //returns to the last of the array. eg. Wispa
+
+    //use .size() in condition
+    for (int i = 0; i < arr.size(); i++) {
+        cout << arr.at(i) << ", ";
+    }
+    cout << endl;
+}
