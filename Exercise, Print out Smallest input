@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <array>
+
+
+using namespace std;
+int main()
+{
+	cout << "Enter numbers up to 5" << endl;
+	int a, b, c, d, e;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	cin >> d;
+	cin >> e;
+
+	array<int, 5> num = { a,b,c,d,e };
+	sort(num.begin(), num.end());
+	cout << "Your smallest number is " << num.front() << endl;
+}
